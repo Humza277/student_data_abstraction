@@ -2,14 +2,9 @@
 from student_data import *
 
 
-class DevOPs(Student):  # inherits characteristics from Student
-    def __init__(self, name, city, classes, sql):
-        super().__init__(name, city, classes)
-        self.sql = sql  # unique to devops only
-
-    def printvalues(self): #polymorphic method
-        return "You have learned " + self.sql
+class DevOPs(Student):  # inherits abstraction characteristics from Student
+    def names(self):
+        print("this is an abstract method")
 
 
-d = DevOPs("Humza", "London", "Computer Science", "SQL")
-print(d.printvalues())
+DevOPs.names("")

@@ -1,1 +1,1 @@
-This is an example of class Polymorphism 
+This is an example of class abstraction

@@ -1,17 +1,9 @@
 # parent class
-class Student:
-    # method initializes the variables
-    def __init__(self, name, city, classes):
-        self.name = name
-        self.__city = city
-        self.classes = classes
+# imports abstract
+from abc import ABC
 
-    # method prints out the variable
-    def printvalues(self): #polymorphic method
-        print("Your name is " + self.name)
-        print("Your name is " + self.__city)
-        print("Your name is " + self.classes)
+class Student(ABC):
+    # method initializes the abstract method
+    def names(self):
+        pass
 
-
-s = Student("Humza", "London", "Computer Science")
-s.printvalues()
